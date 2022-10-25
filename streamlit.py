@@ -2,7 +2,7 @@ import streamlit as st
 
 def add_bg_from_url():
     st.markdown(
-         
+         f"""
          <style>
          .stApp {{
              background-image: url("C:\Users\Hp\Desktop\se.jpg");
@@ -10,7 +10,7 @@ def add_bg_from_url():
              background-size: cover
          }}
          </style>
-         ,
+         """,
          unsafe_allow_html=True
      )
 
