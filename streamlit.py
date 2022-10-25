@@ -31,10 +31,11 @@ video_html = """
 
 
 def check_password():
-    st.markdown(video_html, unsafe_allow_html=True)
+    
     
 
     def password_entered():
+	st.markdown(video_html, unsafe_allow_html=True)
         """Checks whether a password entered by the user is correct."""
         if (
             st.session_state["username"] in st.secrets["passwords"]
