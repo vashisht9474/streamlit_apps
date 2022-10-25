@@ -96,7 +96,7 @@ if check_password():
 
 		</style>	
 		<video autoplay muted loop id="myVideo">
-		  <source src="https://static.videezy.com/system/resources/previews/000/047/870/original/Text_01a_2.mp4")>
+		  <source src="https://youtu.be/7M_fWO7wMyA?t=121")>
 		  Your browser does not support HTML5 video.
 		</video>
         """
