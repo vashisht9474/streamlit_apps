@@ -103,22 +103,22 @@ if check_password():
 st.markdown(video_html1, unsafe_allow_html=True)
 import streamlit as st
 
-def main_page():
-    st.markdown("# Main page 🎈")
-    st.sidebar.markdown("# Main page 🎈")
+def deaf_to_deaf():
+    st.markdown("# deaf to deaf 🎈")
+    st.sidebar.markdown("# deaf to deaf 🎈")
 
-def page2():
-    st.markdown("# Page 2 ❄️")
-    st.sidebar.markdown("# Page 2 ❄️")
+def deaf_to_dumb():
+    st.markdown("# deaf to dumb ❄️")
+    st.sidebar.markdown("# deaf to dumb ❄️")
 
-def page3():
-    st.markdown("# Page 3 🎉")
-    st.sidebar.markdown("# Page 3 🎉")
+def dataset():
+    st.markdown("# sign language dataset 🎉")
+    st.sidebar.markdown("# dataset 🎉")
 
 page_names_to_funcs = {
-    "Main Page": main_page,
-    "Page 2": page2,
-    "Page 3": page3,
+    "deaf_to_deaf": deaf_to_deaf,
+    "deaf_to_dumb": deaf_to_dumb,
+    "dataset": dataset,
 }
 
 selected_page = st.sidebar.selectbox("Select a page", page_names_to_funcs.keys())
