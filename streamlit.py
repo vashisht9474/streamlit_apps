@@ -1,12 +1,7 @@
 import streamlit as st
 
 st.set_page_config(layout="wide")
-
-
-
-
-def check_password():
-	video_html = """
+video_html = """
 		<style>
 
 		#myVideo {
@@ -32,7 +27,13 @@ def check_password():
 		  Your browser does not support HTML5 video.
 		</video>
         """
-	st.markdown(video_html, unsafe_allow_html=True)
+st.markdown(video_html, unsafe_allow_html=True)
+
+
+
+
+def check_password():
+	
     
     
 
