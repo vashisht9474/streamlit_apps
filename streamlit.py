@@ -23,7 +23,7 @@ video_html = """
 
 		</style>	
 		<video autoplay muted loop id="myVideo">
-		  <source src="https://static.videezy.com/system/resources/previews/000/040/463/original/10Z_IMG_1716.mp4")>
+		  <source src="https://static.videezy.com/system/resources/previews/000/005/747/original/hand_signs.mp4")>
 		  Your browser does not support HTML5 video.
 		</video>
         """
