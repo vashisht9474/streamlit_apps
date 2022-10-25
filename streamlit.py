@@ -5,7 +5,7 @@ def add_bg_from_url():
          f"""
          <style>
          .stApp {{
-             background-image: url("C:\Users\Hp\Desktop\se.jpg");
+             background-image: url("https://www.google.com/url?sa=i&url=https%3A%2F%2Funsplash.com%2Fs%2Fphotos%2Fngo&psig=AOvVaw0AgbGD_V4lGClz7UMxTA_A&ust=1666768253552000&source=images&cd=vfe&ved=0CAkQjRxqFwoTCIjR4d7p-voCFQAAAAAdAAAAABAE");
              background-attachment: fixed;
              background-size: cover
          }}
