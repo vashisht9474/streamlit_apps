@@ -50,26 +50,26 @@ def check_password():
         	else:
             		st.session_state["password_correct"] = False
 
-    		if "password_correct" not in st.session_state:
-        	# First run, show inputs for username + password.
-        		st.text_input("Username", on_change=password_entered, key="username")
-        		st.text_input(
-            		"Password", type="password", on_change=password_entered, key="password"
-        		)
-        		return False
-    		elif not st.session_state["password_correct"]:
-        	# Password not correct, show input + error.
-        		st.text_input("Username", on_change=password_entered, key="username")
-        		st.text_input(
-            		"Password", type="password", on_change=password_entered, key="password"
+    			if "password_correct" not in st.session_state:
+        		# First run, show inputs for username + password.
+        			st.text_input("Username", on_change=password_entered, key="username")
+        			st.text_input(
+            			"Password", type="password", on_change=password_entered, key="password"
+        			)
+        			return False
+    			elif not st.session_state["password_correct"]:
+        		# Password not correct, show input + error.
+        			st.text_input("Username", on_change=password_entered, key="username")
+        			st.text_input(
+            			"Password", type="password", on_change=password_entered, key="password"
             
-        		)
-        		st.error("😕 User not known or password incorrect")
+        			)
+        			st.error("😕 User not known or password incorrect")
         
-        		return False
-    		else:
-        	# Password correct.
-        	return True
+        			return False
+    			else:
+        		# Password correct.
+        			return True
     
 
     
