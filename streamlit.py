@@ -1,15 +1,34 @@
 import streamlit as st
 
-page_bg_img = '''
-<style>
-body {
-background-image: url("https://images.unsplash.com/photo-1542281286-9e0a16bb7366");
-background-size: cover;
-}
-</style>
-'''
+st.set_page_config(layout="wide")
 
-st.markdown(page_bg_img, unsafe_allow_html=True)
+video_html = """
+		<style>
+
+		#myVideo {
+		  position: fixed;
+		  right: 0;
+		  bottom: 0;
+		  min-width: 100%; 
+		  min-height: 100%;
+		}
+
+		.content {
+		  position: fixed;
+		  bottom: 0;
+		  background: rgba(0, 0, 0, 0.5);
+		  color: #f1f1f1;
+		  width: 100%;
+		  padding: 20px;
+		}
+
+		</style>	
+		<video autoplay muted loop id="myVideo">
+		  <source src="https://static.videezy.com/system/resources/previews/000/040/463/original/10Z_IMG_1716.mp4")>
+		  Your browser does not support HTML5 video.
+		</video>
+        """
+st.markdown(video_html, unsafe_allow_html=True)
 
    
 
