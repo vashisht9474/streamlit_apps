@@ -1,20 +1,15 @@
 import streamlit as st
 
-def add_bg_from_url():
-    st.markdown(
-         f"""
-         <style>
-         .stApp {{
-             background-image: url("https://www.google.com/url?sa=i&url=https%3A%2F%2Funsplash.com%2Fbackgrounds&psig=AOvVaw1O03BPIlxQ1OAPlXF7daqk&ust=1666768330437000&source=images&cd=vfe&ved=0CAkQjRxqFwoTCIjzuoPq-voCFQAAAAAdAAAAABAE");
-             background-attachment: fixed;
-             background-size: cover
-         }}
-         </style>
-         """,
-         unsafe_allow_html=True
-     )
+page_bg_img = '''
+<style>
+body {
+background-image: url("https://images.unsplash.com/photo-1542281286-9e0a16bb7366");
+background-size: cover;
+}
+</style>
+'''
 
-add_bg_from_url() 
+st.markdown(page_bg_img, unsafe_allow_html=True)
 
    
 
