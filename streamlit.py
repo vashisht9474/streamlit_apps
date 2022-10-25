@@ -34,9 +34,7 @@ video_html = """
 
 def check_password():
 	st.markdown(video_html, unsafe_allow_html=True)
-    
-
-    def password_entered():
+	def password_entered():
 	
 		
 
@@ -72,6 +70,9 @@ def check_password():
     else:
         # Password correct.
         return True
+    
+
+    
 
 if check_password():
     
