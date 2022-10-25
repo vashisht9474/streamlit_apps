@@ -38,7 +38,7 @@ def check_password():
 	
 		
 
-        """Checks whether a password entered by the user is correct."""
+        
         if (
             st.session_state["username"] in st.secrets["passwords"]
             and st.session_state["password"]
