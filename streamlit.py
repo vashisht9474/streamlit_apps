@@ -1,5 +1,5 @@
 import streamlit as st
-import cv2
+import CV2
    
 
 def check_password():
