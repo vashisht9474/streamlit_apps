@@ -2,7 +2,15 @@ import streamlit as st
 
 st.set_page_config(layout="wide")
 
-video_html = """
+
+
+   
+
+def check_password():
+    """Returns `True` if the user had a correct password."""
+
+    def password_entered():
+		video_html = """
 		<style>
 
 		#myVideo {
@@ -29,13 +37,6 @@ video_html = """
 		</video>
         """
 st.markdown(video_html, unsafe_allow_html=True)
-
-   
-
-def check_password():
-    """Returns `True` if the user had a correct password."""
-
-    def password_entered():
         """Checks whether a password entered by the user is correct."""
         if (
             st.session_state["username"] in st.secrets["passwords"]
