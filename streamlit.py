@@ -1,4 +1,6 @@
 import streamlit as st
+import cv2
+   
 
 def check_password():
     """Returns `True` if the user had a correct password."""
@@ -38,8 +40,7 @@ def check_password():
         return True
 
 if check_password():
-    import cv2
-    import streamlit as st
+    
 
     st.title("Webcam Live Feed")
     run = st.checkbox('Run')
