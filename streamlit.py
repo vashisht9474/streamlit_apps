@@ -73,6 +73,7 @@ def check_password():
         return True
 
 if check_password():
+	st.write("hello")
 	video_html1 = """
 		<style>
 
@@ -102,4 +103,4 @@ if check_password():
 st.markdown(video_html1, unsafe_allow_html=True)
     
 
-  st.write("hello")
+  
